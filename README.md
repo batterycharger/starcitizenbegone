@@ -3,3 +3,4 @@ Pretty please, star citizen begone, from my eyes, from my drive, leave no trace 
 
 Half futile attemp to remove it faster than it downloaded.
 
+And by the way, Will not save a thing. Leave no trace.
