@@ -1,0 +1,14 @@
+hierarchy
+1. primary user 2. admin user 3. secondary normal user via admin privileges (run as normal user)
+
+locations:
+RSI software location
+- "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Roberts Space Industries"
+library location
+- 
+registery location
+- HKCU\SOFTWARE\Roberts Space Industries
+
+
+skipped:
+temp folders

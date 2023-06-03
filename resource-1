@@ -1,0 +1,58 @@
+Downloaded 20230531
+Roberts Space Industries Knowledge Base  Technical Support
+HOW TO DELETE THE RSI LAUNCHER AND STAR CITIZEN
+Avatar Created by: THRYSURR-CIG
+When reinstalling for a new Launcher or to troubleshoot errors and issues, you need to fully remove the game and dependent configuration files.
+
+ 
+
+SAVING YOUR CUSTOM FILES
+Before deleting your game and Launcher, you may want to save any custom profiles, keybindings, and user.cfg files.
+ 
+If you have custom settings, keybindings, etc, you may want to save those files before fully deleting!
+Go to the Mappings folder: (install drive)\Program Files\Roberts Space Industries\StarCitizen\LIVE\USER\Controls\Mappings
+Save any profile, keybindings, etc. files to a new temp folder.
+If you created a custom user.cfg file, you may want to save it.
+Go to the game install folder: ex. (install drive)\Program Files\Roberts Space Industries\StarCitizen\LIVE\
+Save the user.cfg file to a new temp folder.
+ 
+
+FULLY DELETE ALL FILES
+The following instructions will fully clear and delete the Launcher and game files:
+
+Right click on the Windows icon and select Run.
+Enter and run %appdata% and click Ok. This opens Users\CurrentProfile\Appdata\Roaming. Delete the rsilauncher folder.
+Right click on the Windows icon and select Run again.
+Enter and run %localappdata% and click Ok. This opens Users\CurrentProfile\Appdata\Local. Delete the StarCitizen folder.
+In the file manager, navigate to (install drive)\Program Files. Delete the entire Roberts Space Industries folder.
+Clear your Trash/Recycle Bin. The amount of files deleted need to be cleared to save space.
+ 
+
+ADMINISTRATOR, STANDARD WINDOWS USER, AND APPDATA FILES
+If you don't find Star Citizen or RSI files in appdata under your Windows account, it's possible they are under the Administrator account. When you right-click on the Launcher and select "Run as Administrator", Windows uses an Admin or Administrator account and generates appdata folders for it. 
+
+To see what user account folders you have, use a File Manager and navigate to c:\Users. Make note of the name like Admin. After opening an appdata location, you can edit the folder location bar with the admin name. For example: C:\Users\admin\AppData\Local
+
+ 
+
+LOGINDATA.JSON FILE CHANGE
+The new RSI Launcher generates a new logindata.json file every time you open the Launcher. This file only exists while the Launcher is open. When you open the Launcher and login, the file generates. When closed, the file is deleted. This helps with syncing your account credentials for the game after changing your password. 
+
+ 
+
+CLEAR LAUNCHER CACHE AND SAVE LOG.LOG
+If you need to clear Launcher cache and files, you may not want to delete the entire folder in appdata. The file log.log includes every action completed by the Launcher across every login and launch.
+
+To clear the cache without deleting log.log:
+
+Press the Windows icon + R to open the Run command.
+Enter and run %appdata%\rsilauncher   A folder view opens.
+Select and delete the Cache and GPUCache folders. Clear the trash.
+Right-click on your Launcher icon and select Run as Administrator.
+ 
+
+LIBRARY FOLDER CHANGE
+If you continue to see oddness, and the Launcher loads, check the Settings > Library Folder in the Launcher. Make sure the file location matches your current full game install. Moving your game file and not syncing the location here can cause issues.
+
+ settings-libraryfolder.png
+
