@@ -1,3 +1,8 @@
+findings hold 2023, maybe not later.
+todo:
+- [ ]  uninstall RSI tool
+- [ ]  remove (install drive)\Program Files\Roberts Space Industries\StarCitizen\LIVE\
+
 hierarchy
 1. primary user 2. admin user 3. secondary normal user via admin privileges (run as normal user)
 
@@ -8,7 +13,23 @@ library location
 - 
 registery location
 - HKCU\SOFTWARE\Roberts Space Industries
+- Computer\HKEY_LOCAL_MACHINE\SOFTWARE\81bfc699-f883-50c7-b674-2483b6baae23
+-- RSI launcher location
 
 
 skipped:
-temp folders
+"temp folders"
+Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer
+Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Compatibility Assistant\Store
+Computer\HKEY_CURRENT_USER\SOFTWARE\Stardock\Fences\Icons
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\RADAR
+Computer\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\bam\State\UserSettings
+
+
+looks interesting:
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\81bfc699-f883-50c7-b674-2483b6baae23
+
+#uninstall command and parameters for launcher.
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\81bfc699-f883-50c7-b674-2483b6baae23
+* has QuietUninstallString "E:\Games\Roberts Space Industries\RSI Launcher\Uninstall RSI Launcher.exe" /allusers /S
+* UninstallString "E:\Games\Roberts Space Industries\RSI Launcher\Uninstall RSI Launcher.exe" /allusers
