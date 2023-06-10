@@ -16,6 +16,8 @@ registery location
 - Computer\HKEY_LOCAL_MACHINE\SOFTWARE\81bfc699-f883-50c7-b674-2483b6baae23
 -- RSI launcher location
 
+Option for firewall rules removal?
+- only win10 fw support
 
 skipped:
 "temp folders"
